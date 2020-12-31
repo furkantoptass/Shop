@@ -24,7 +24,7 @@ export class AddProductFormReactiveComponent implements OnInit {
   
     }
 
-    productAddForm:FormGroup;
+    productAddForm:FormGroup; //Look at me
     product:Product=new Product();
     categories: Category[]=[];
 

@@ -87,14 +87,6 @@
       "price": "2",
       "categoryId": "4",
       "id": 10
-    },
-    {
-      "name": "asdas",
-      "desciription": "asdasd",
-      "imageUrl": "asdasdsadasdsa",
-      "price": "asdasdasdsadasdsads",
-      "categoryId": "2",
-      "id": 11
     }
   ],
   "categories": [
