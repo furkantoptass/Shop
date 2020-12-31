@@ -1,0 +1,41 @@
+
+
+<h3 *ngIf="products; else: noProduct" class="mb-5">{{title}}</h3>
+
+<div class="form-group">
+ 
+  <input class="form-control" id="productSearch" placeholder="Product Search" [(ngModel)]="searchText">
+
+</div>
+
+<ng-template #noProduct>
+    <div class="alert alert-success" role="alert">
+        THERE IS NO PRODUCT
+      </div>
+    
+</ng-template>
+
+
+<div class="row" data-masonry='{"percentPosition": true }'>
+    <div *ngFor='let product of products | productSearch:searchText' class="col-sm-4 col-lg-4 mb-4 ">
+      <div class="card border border-dark">
+        <img [src]="product.imageUrl" class="card-img-top productimage" alt="Product İmage">
+
+        <div class="card-body">
+          <h3 class="card-title text-center border-bottom pb-2">{{product.name}}</h3>
+          <p class="card-text">{{product.desciription}}</p>
+          <div class="row">
+            <div class="col-md-7">
+              <h4 class="card-text">{{product.price | currency:'TRY'}}</h4>
+            </div>
+           <div class="col-md-5 text-right">
+            <button (click)="addToCart(product)" type="button" class="btn btn-secondary">Buy</button>
+           </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+</div>
