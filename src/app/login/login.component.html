@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
+  <title>Signin Template · Bootstrap v5.0</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+
+
+
+
+
+</head>
+
+<body class="text-center">
+
+  <main class="form-signin">
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <img class="mb-4"
+        src="https://img.pngio.com/user-logo-png-user-computer-icons-clipart-download-800-800-user-logo-png-900_800.png"
+        alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+      <input type="text" placeholder="Username" #userName="ngModel" [(ngModel)]="model.Username" class="form-control"
+        name="username" id="username" required autofocus>
+      <input type="text" placeholder="Password" #password="ngModel" [(ngModel)]="model.password" class="form-control"
+        name="password" id="password" required>
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+    </form>
+  </main>
+
+
+
+
+
+
+</body>
+
+</html>
