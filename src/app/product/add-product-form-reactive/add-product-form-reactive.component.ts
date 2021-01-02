@@ -26,15 +26,15 @@ export class AddProductFormReactiveComponent implements OnInit {
     }
 
    
-  //  productAddForm = new FormGroup({
-  //    name:new FormControl(),
-  //    desciription:new FormControl(),
-  //    imageUrl:new FormControl(),
-  //    price:new FormControl(),
-  //    categoryId:new FormControl()
-  //  });
+    // productAddForm = new FormGroup({
+    //   name:new FormControl(),
+    //   desciription:new FormControl(),
+    //   imageUrl:new FormControl(),
+    //   price:new FormControl(),
+    //   categoryId:new FormControl()
+    // });
 
-  productAddForm:FormGroup;//Look at me
+  productAddForm!:FormGroup;//Look at me
 
 
     product:Product=new Product();
