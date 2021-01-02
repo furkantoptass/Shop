@@ -1,3 +1,11 @@
 .h100{
-    height: 100vh!important;
+    height: 100%;
+    width: 224px;
+    position: fixed;
+    z-index: 1;
+    top: 47px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
