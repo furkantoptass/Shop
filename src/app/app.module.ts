@@ -14,6 +14,9 @@ import { AlertifyService } from './services/alertify.service';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AddProductFormClassicComponent } from './product/add-product-form-classic/add-product-form-classic.component';
 import { AddProductFormReactiveComponent } from './product/add-product-form-reactive/add-product-form-reactive.component';
+import { LoginComponent } from './login/login.component';
+import { AccountService } from './services/account.service';
+import { LoginGuard } from './login/login.guard';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { AddProductFormReactiveComponent } from './product/add-product-form-reac
     ProductSearchPipe,
     SidebarComponent,
     AddProductFormClassicComponent,
-    AddProductFormReactiveComponent
+    AddProductFormReactiveComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,7 @@ import { AddProductFormReactiveComponent } from './product/add-product-form-reac
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [AlertifyService],
+  providers: [AlertifyService,AccountService,LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
