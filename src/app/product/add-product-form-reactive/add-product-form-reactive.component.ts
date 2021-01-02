@@ -18,19 +18,32 @@ export class AddProductFormReactiveComponent implements OnInit {
     private categoryService : CategoryService, 
     private productService : ProductService,
     private alertifySevice : AlertifyService,
+    public productAddForm : FormGroup
       
     )  { 
 
   
     }
 
-    productAddForm:FormGroup; //Look at me
+   
+  //  productAddForm = new FormGroup({
+  //    name:new FormControl(),
+  //    desciription:new FormControl(),
+  //    imageUrl:new FormControl(),
+  //    price:new FormControl(),
+  //    categoryId:new FormControl()
+  //  });
+
+  productAddForm:FormGroup;//Look at me
+
+
     product:Product=new Product();
     categories: Category[]=[];
 
   
 
   createproductAddForm(){
+    
     this.productAddForm=this.formBuilder.group({
       name:["",Validators.required],
       desciription:["",Validators.required],
