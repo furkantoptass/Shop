@@ -13,9 +13,10 @@ export class AccountService {
 
     if(user.userName=="furkan" && user.password=="123")
     {
-      return true;
       this.loggedIn=true;
       localStorage.setItem("isLogged",user.userName);
+      return true;
+      
     }
     return false;
 
