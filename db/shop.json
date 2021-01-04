@@ -87,6 +87,14 @@
       "price": "2",
       "categoryId": "4",
       "id": 10
+    },
+    {
+      "name": "Televizyon",
+      "desciription": "LG 102",
+      "imageUrl": "https://productimages.hepsiburada.net/s/0/375/9429535621170.jpg",
+      "price": "10000",
+      "categoryId": "2",
+      "id": 13
     }
   ],
   "categories": [
