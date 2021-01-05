@@ -32,7 +32,7 @@ export class AddProductFormReactiveComponent implements OnInit {
   //   categoryId: new FormControl()
   // });
 
-   productAddForm: FormGroup; //Look at me
+   productAddForm!: FormGroup; //Look at me
   //Look at me
 
 
